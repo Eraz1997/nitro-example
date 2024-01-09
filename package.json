@@ -4,7 +4,8 @@
     "prepare": "nitropack prepare",
     "dev": "nitropack dev",
     "build": "nitropack build",
-    "preview": "node .output/server/index.mjs"
+    "preview": "bun .output/server/index.mjs",
+    "start-redis": "docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest"
   },
   "dependencies": {
     "nitropack": "latest"
